@@ -2,13 +2,20 @@
 #include <stdio.h>
 
 int apples_remainder(int n, int k);
-
+int pies_remainder(int a, int b, int n);
 int main(){
+    // Task1
     assert(apples_remainder(3, 10) == 1);
     assert(apples_remainder(5, 10) == 0);
     assert(apples_remainder(7, 3) == 3);
     assert(apples_remainder(1, 9999) == 0);
+    // Task2
+    assert(pies_remainder(10, 50, 1) == 50);
+    assert(pies_remainder(10, 50, 2) == 0);
+    assert(pies_remainder(1, 99, 1) == 99);
+    assert(pies_remainder(2, 99, 2) == 98);
 
     printf("task2: Все тесты пройдены\n");
     return 0;
 }
+
